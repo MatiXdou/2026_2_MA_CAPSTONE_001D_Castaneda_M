@@ -25,6 +25,10 @@ builder.Services.AddScoped<VentaService>();
 builder.Services.AddScoped<CompraRepository>();
 builder.Services.AddScoped<CompraService>();
 
+builder.Services.AddScoped<DashboardRepository>();
+builder.Services.AddScoped<DashboardService>();
+
+
 builder.Services.AddScoped<CorreoService>();
 
 var connectionString = builder.Configuration.GetConnectionString("PRV_BD");
